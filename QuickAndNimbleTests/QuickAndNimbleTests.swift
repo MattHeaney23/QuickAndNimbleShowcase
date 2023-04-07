@@ -11,12 +11,9 @@ import Quick
 import Nimble
 
 class QuickAndNimbleTests: QuickSpec {
-
-    //1 - Add the spec
     
     override func spec() {
         
-        //Create the before each
         var trolleyViewModel: TrolleyViewModel!
         
         beforeEach {
@@ -26,11 +23,6 @@ class QuickAndNimbleTests: QuickSpec {
         afterEach {
             trolleyViewModel = nil
         }
-        
-        //rather than given, when, then - we use a structure provided by quick
-        //set up the context
-        //set up the describe
-        //set up it
         
         context("Creating an order") {
             
@@ -42,12 +34,19 @@ class QuickAndNimbleTests: QuickSpec {
             
             describe("when the user adds an item") {
                 it("should add the item to the trolley") {
+                    
+                    //Arrange
                     let item = Item(name: "PS5",
                                     id: "Item001",
                                     price: 750.00)
                     
+                    //Act
                     trolleyViewModel.addItemToTrolley(item: item)
+                    
+                    //Asset
                     expect(trolleyViewModel.itemsInTrolley.count).to(equal(1))
+                    
+                    //A different way of using expect to assert a value
                     expect(trolleyViewModel.itemsInTrolley.count) == 1
                     expect(trolleyViewModel.itemsInTrolley[0].id) == "Item001"
                 }
@@ -70,7 +69,6 @@ class QuickAndNimbleTests: QuickSpec {
             describe("When the item is not in my trolley") {
                 it("Should thrown an error") {
                     //Arrange
-                    
                     let item = Item(name: "", id: "", price: 0.0)
                     
                     //Act and Assert
@@ -84,8 +82,11 @@ class QuickAndNimbleTests: QuickSpec {
             describe("when i load my saved order") {
                 it("should load items into my trolley") {
                     
+                    // Act
                     trolleyViewModel.getStoredTrolleyFromServer { }
                     
+                    
+                    // Assert
                     expect(trolleyViewModel.itemsInTrolley).toEventually(contain(Item(name: "PS5",
                                                                                       id: "Item0001",
                                                                                       price: 699.99),

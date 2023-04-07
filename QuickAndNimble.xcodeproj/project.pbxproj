@@ -17,6 +17,7 @@
 		C9B2106326EE5AD600DCE242 /* TrolleyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B2106226EE5AD600DCE242 /* TrolleyError.swift */; };
 		C9B2106526EE5B7D00DCE242 /* PurchaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B2106426EE5B7D00DCE242 /* PurchaseError.swift */; };
 		C9B2106D26EE5EF800DCE242 /* QuickAndNimbleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B2106C26EE5EF800DCE242 /* QuickAndNimbleTests.swift */; };
+		C9F83FB929E0B25500E9F313 /* What are the Quick and Nimble frameworks.md in Resources */ = {isa = PBXBuildFile; fileRef = C9F83FB829E0B25500E9F313 /* What are the Quick and Nimble frameworks.md */; };
 		FE2BA320F9BAC40044EF801F /* libPods-QuickAndNimble-Tests-QuickAndNimbleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB7BFFE95571F39365C3CEC1 /* libPods-QuickAndNimble-Tests-QuickAndNimbleTests.a */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		C9B2106A26EE5EF800DCE242 /* QuickAndNimbleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickAndNimbleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9B2106C26EE5EF800DCE242 /* QuickAndNimbleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickAndNimbleTests.swift; sourceTree = "<group>"; };
 		C9B2106E26EE5EF800DCE242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9F83FB829E0B25500E9F313 /* What are the Quick and Nimble frameworks.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "What are the Quick and Nimble frameworks.md"; sourceTree = "<group>"; };
 		DB7BFFE95571F39365C3CEC1 /* libPods-QuickAndNimble-Tests-QuickAndNimbleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QuickAndNimble-Tests-QuickAndNimbleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9D45B62CDB873CA58B2AE4B /* Pods-QuickAndNimble-Tests-QuickAndNimbleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickAndNimble-Tests-QuickAndNimbleTests.release.xcconfig"; path = "Target Support Files/Pods-QuickAndNimble-Tests-QuickAndNimbleTests/Pods-QuickAndNimble-Tests-QuickAndNimbleTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,13 +91,13 @@
 				B2BCECB7263519ECAF3B4EE2 /* Pods-QuickAndNimble-Tests-QuickAndNimbleTests.debug.xcconfig */,
 				F9D45B62CDB873CA58B2AE4B /* Pods-QuickAndNimble-Tests-QuickAndNimbleTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		C9B2104226EE568100DCE242 = {
 			isa = PBXGroup;
 			children = (
+				C9F83FB829E0B25500E9F313 /* What are the Quick and Nimble frameworks.md */,
 				C9B2104D26EE568200DCE242 /* QuickAndNimble */,
 				C9B2106B26EE5EF800DCE242 /* QuickAndNimbleTests */,
 				C9B2104C26EE568200DCE242 /* Products */,
@@ -237,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9B2105626EE568300DCE242 /* Preview Assets.xcassets in Resources */,
+				C9F83FB929E0B25500E9F313 /* What are the Quick and Nimble frameworks.md in Resources */,
 				C9B2105326EE568300DCE242 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
