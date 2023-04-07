@@ -1,0 +1,6 @@
+module Pods_QuickAndNimble_Tests_QuickAndNimbleTests {
+  umbrella header "Pods-QuickAndNimble-Tests-QuickAndNimbleTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
