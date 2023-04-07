@@ -83,17 +83,16 @@ class QuickAndNimbleTests: QuickSpec {
                 it("should load items into my trolley") {
                     
                     // Act
-                    trolleyViewModel.getStoredTrolleyFromServer { }
-                    
+                    await trolleyViewModel.getStoredTrolleyFromServer()
                     
                     // Assert
-                    expect(trolleyViewModel.itemsInTrolley).toEventually(contain(Item(name: "PS5",
-                                                                                      id: "Item0001",
-                                                                                      price: 699.99),
-                                                                                 Item(name: "iPad Pro",
-                                                                                      id: "Item0002",
-                                                                                      price: 999.99)),
-                                                                         timeout: DispatchTimeInterval.seconds(1))
+                    await expect(trolleyViewModel.itemsInTrolley).toEventually(contain(Item(name: "PS5",
+                                                                                            id: "Item0001",
+                                                                                            price: 699.99),
+                                                                                       Item(name: "iPad Pro",
+                                                                                            id: "Item0002",
+                                                                                            price: 999.99)),
+                                                                               timeout: DispatchTimeInterval.seconds(1))
                 }
             }
         }

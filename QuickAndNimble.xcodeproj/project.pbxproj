@@ -18,6 +18,7 @@
 		C9B2106526EE5B7D00DCE242 /* PurchaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B2106426EE5B7D00DCE242 /* PurchaseError.swift */; };
 		C9B2106D26EE5EF800DCE242 /* QuickAndNimbleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B2106C26EE5EF800DCE242 /* QuickAndNimbleTests.swift */; };
 		C9F83FB929E0B25500E9F313 /* What are the Quick and Nimble frameworks.md in Resources */ = {isa = PBXBuildFile; fileRef = C9F83FB829E0B25500E9F313 /* What are the Quick and Nimble frameworks.md */; };
+		C9F83FBC29E0B48D00E9F313 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F83FBB29E0B48C00E9F313 /* NetworkService.swift */; };
 		FE2BA320F9BAC40044EF801F /* libPods-QuickAndNimble-Tests-QuickAndNimbleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB7BFFE95571F39365C3CEC1 /* libPods-QuickAndNimble-Tests-QuickAndNimbleTests.a */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		C9B2106C26EE5EF800DCE242 /* QuickAndNimbleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickAndNimbleTests.swift; sourceTree = "<group>"; };
 		C9B2106E26EE5EF800DCE242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9F83FB829E0B25500E9F313 /* What are the Quick and Nimble frameworks.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "What are the Quick and Nimble frameworks.md"; sourceTree = "<group>"; };
+		C9F83FBB29E0B48C00E9F313 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		DB7BFFE95571F39365C3CEC1 /* libPods-QuickAndNimble-Tests-QuickAndNimbleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QuickAndNimble-Tests-QuickAndNimbleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9D45B62CDB873CA58B2AE4B /* Pods-QuickAndNimble-Tests-QuickAndNimbleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickAndNimble-Tests-QuickAndNimbleTests.release.xcconfig"; path = "Target Support Files/Pods-QuickAndNimble-Tests-QuickAndNimbleTests/Pods-QuickAndNimble-Tests-QuickAndNimbleTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -124,6 +126,7 @@
 				C9B2105726EE568300DCE242 /* Info.plist */,
 				C9B2105426EE568300DCE242 /* Preview Content */,
 				C9B2105F26EE5AAC00DCE242 /* Models */,
+				C9F83FBA29E0B47B00E9F313 /* Services */,
 			);
 			path = QuickAndNimble;
 			sourceTree = "<group>";
@@ -154,6 +157,14 @@
 				C9B2106E26EE5EF800DCE242 /* Info.plist */,
 			);
 			path = QuickAndNimbleTests;
+			sourceTree = "<group>";
+		};
+		C9F83FBA29E0B47B00E9F313 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C9F83FBB29E0B48C00E9F313 /* NetworkService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,6 +322,7 @@
 				C9B2106526EE5B7D00DCE242 /* PurchaseError.swift in Sources */,
 				C9B2105126EE568200DCE242 /* ContentView.swift in Sources */,
 				C9B2104F26EE568200DCE242 /* QuickAndNimbleApp.swift in Sources */,
+				C9F83FBC29E0B48D00E9F313 /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,16 +11,12 @@ import UIKit
 class TrolleyViewModel {
     
     var itemsInTrolley: [Item] = []
+    let networkService = NetworkService()
     
     /// Load stored trolley. This is currently mocked out for the example
-    func getStoredTrolleyFromServer(completionHandler: () -> ()) {
-        itemsInTrolley.append(Item(name: "PS5",
-                                   id: "Item0001",
-                                   price: 699.99))
-        
-        itemsInTrolley.append(Item(name: "iPad Pro",
-                                   id: "Item0002",
-                                   price: 999.99))
+    func getStoredTrolleyFromServer() async {
+        let storedItems = await networkService.requestStoredItemsForUser()
+        itemsInTrolley.append(contentsOf: storedItems)
     }
     
     /// Remove an item form the trolley, if the item is currently in the trolley
@@ -44,8 +40,9 @@ class TrolleyViewModel {
         guard funds >= grandTotal else {
             throw NSError()
         }
+
+        networkService.makePurchase()
         
-        //Mocked Logic - In a real app, purchasing logic would sit here
         itemsInTrolley.removeAll()
     }
 }
